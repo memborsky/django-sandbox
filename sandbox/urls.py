@@ -22,4 +22,8 @@ urlpatterns = patterns('',
 
     # (web) / -> (path) /base/templates/index.html
     url(r'^$', direct_to_template, {'template': 'base/index.html'}),
+
+    # Skeleton responsive example.
+    # (web) /skeleton/* -> (path) /skeleton/urls.py
+    url(r'^skeleton/', include('skeleton.urls'))
 )

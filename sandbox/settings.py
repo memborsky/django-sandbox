@@ -124,6 +124,9 @@ INSTALLED_APPS = (
     # The base web site.
     'base',
 
+    # Responsive web layout examples.
+    'skeleton',
+
     # Uncomment the next line to enable the admin:
     # 'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:

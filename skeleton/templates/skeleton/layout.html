@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>{% load static from staticfiles %}
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"><![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"><![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>{% block title %}{{ page.title|default:"Skeleton" }}{% endblock %}</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <meta name="viewport content="width=device-width, initial-scale=1, maximum-scale=1">
+{% for css in page.css %}
+    <link rel="stylesheet" href="{% static css %}">
+{% endfor %}
+
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/truck/html5.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="/skeleton/images/favicon.ico">
+    <link rel="apple-touch-icon" href="/skeleton/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/skeleton/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/skeleton/images/apple-touch-icon-114x114.png">
+
+</head>
+<body>
+    {% block content %}
+    <a href="http://getskeleton.com/">Get Skeleton</a>
+    {% endblock %}
+</body>
