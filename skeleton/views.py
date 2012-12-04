@@ -4,9 +4,9 @@ def index(request):
     page_details = {
         'title': "Welcome to Skeleton.",
         'css': {
-            "/skeleton/stylesheets/base.css",
-            "/skeleton/stylesheets/skeleton.css",
-            "/skeleton/stylesheets/layout.css",
+            "skeleton/stylesheets/base.css",
+            "skeleton/stylesheets/skeleton.css",
+            "skeleton/stylesheets/layout.css",
         }
     }
 

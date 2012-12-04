@@ -13,7 +13,7 @@ import os
 urlpatterns = patterns('',
     # our static stylesheets files
     url(r'^stylesheets/(?P<path>.*)$', 'django.views.static.serve', {
-        'document_root': os.path.join(settings.OUR_ROOT, 'skeleton/static/stylesheets')
+        'document_root': os.path.join(settings.OUR_ROOT, '/skeleton/static/stylesheets')
     }),
 
     # our static javascript files
@@ -23,7 +23,7 @@ urlpatterns = patterns('',
 
     # our static images files
     url(r'^images/(?P<path>.*)$', 'django.views.static.serve', {
-        'document_root': os.path.join(settings.OUR_ROOT, 'skeleton/static/images')
+        'document_root': os.path.join(settings.OUR_ROOT, '/skeleton/static/images')
     }),
 
     # the root page
