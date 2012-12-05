@@ -3,7 +3,7 @@ from django.shortcuts import render_to_response
 def index(request):
     page_details = {
         'title': "Welcome to Skeleton.",
-        'css': {
+        'stylesheets': {
             "skeleton/stylesheets/base.css",
             "skeleton/stylesheets/skeleton.css",
             "skeleton/stylesheets/layout.css",
