@@ -126,6 +126,7 @@ INSTALLED_APPS = (
 
     # Responsive web layout examples.
     'skeleton',
+    'initializr',
 
     # Uncomment the next line to enable the admin:
     # 'django.contrib.admin',

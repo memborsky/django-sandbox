@@ -25,5 +25,9 @@ urlpatterns = patterns('',
 
     # Skeleton responsive example.
     # (web) /skeleton/* -> (path) /skeleton/urls.py
-    url(r'^skeleton/', include('skeleton.urls'))
+    url(r'^skeleton/', include('skeleton.urls')),
+
+    # Initializr responsive example.
+    # (web) /initializr/* -> (path) /initializr/urls.py
+    url(r'^initializr/', include('initializr.urls')),
 )
